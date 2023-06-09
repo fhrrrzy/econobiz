@@ -1,0 +1,187 @@
+{
+    "message": "ok",
+    "data": {
+        "products": [
+            {
+                "product_id": 1,
+                "photo": "https://source.unsplash.com/400x300?egg",
+                "province": "Sumatera Utara",
+                "price": 1000000,
+                "category": "organik",
+                "user_name": "roji",
+                "name": "putih telur"
+            },
+            {
+                "product_id": 2,
+                "photo": "https://source.unsplash.com/400x300?paint",
+                "province": "Jawa Barat",
+                "price": 750000,
+                "category": "kimia",
+                "user_name": "anita",
+                "name": "cat"
+            },
+            {
+                "product_id": 3,
+                "photo": "https://source.unsplash.com/400x300?accessories",
+                "province": "DKI Jakarta",
+                "price": 50000,
+                "category": "non-organik",
+                "user_name": "budi",
+                "name": "manik manik"
+            },
+            {
+                "product_id": 4,
+                "photo": "https://source.unsplash.com/400x300?cotton",
+                "province": "Jawa Tengah",
+                "price": 250000,
+                "category": "non-organik",
+                "user_name": "siti",
+                "name": "kain katun bekas"
+            },
+            {
+                "product_id": 5,
+                "photo": "https://source.unsplash.com/400x300?cotton",
+                "province": "Bali",
+                "price": 800000,
+                "category": "non-organik",
+                "user_name": "putra",
+                "name": "kain perca"
+            },
+            {
+                "product_id": 6,
+                "photo": "https://source.unsplash.com/400x300?wood",
+                "province": "Kalimantan Timur",
+                "price": 1500000,
+                "category": "organik",
+                "user_name": "lina",
+                "name": "serat kayu"
+            },
+            {
+                "product_id": 7,
+                "photo": "https://source.unsplash.com/400x300?glass",
+                "province": "Jawa Timur",
+                "price": 300000,
+                "category": "non-organik",
+                "user_name": "andi",
+                "name": "pecahan kaca"
+            },
+            {
+                "product_id": 8,
+                "photo": "https://source.unsplash.com/400x300?egg",
+                "province": "Aceh",
+                "price": 700000,
+                "category": "organik",
+                "user_name": "sari",
+                "name": "kulit telur"
+            },
+            {
+                "product_id": 9,
+                "photo": "https://source.unsplash.com/400x300?egg",
+                "province": "Banten",
+                "price": 1200000,
+                "category": "organik",
+                "user_name": "david",
+                "name": "telur pecah"
+            },
+            {
+                "product_id": 10,
+                "photo": "https://source.unsplash.com/400x300?plastic",
+                "province": "Kalimantan Barat",
+                "price": 180000,
+                "category": "non-organik",
+                "user_name": "jenny",
+                "name": "plastik bekas"
+            },
+            {
+                "product_id": 11,
+                "photo": "https://source.unsplash.com/400x300?fiber",
+                "province": "Sumatera Selatan",
+                "price": 900000,
+                "category": "non-organik",
+                "user_name": "adit",
+                "name": "kain bekas"
+            },
+            {
+                "product_id": 12,
+                "photo": "https://source.unsplash.com/400x300?paper",
+                "province": "Sulawesi Selatan",
+                "price": 500000,
+                "category": "non-organik",
+                "user_name": "sinta",
+                "name": "kertas"
+            },
+            {
+                "product_id": 13,
+                "photo": "https://source.unsplash.com/400x300?accessories",
+                "province": "Papua",
+                "price": 350000,
+                "category": "non-organik",
+                "user_name": "rani",
+                "name": "manik manik"
+            },
+            {
+                "product_id": 14,
+                "photo": "https://source.unsplash.com/400x300?leaf",
+                "province": "Nusa Tenggara Barat",
+                "price": 600000,
+                "category": "organik",
+                "user_name": "anton",
+                "name": "daun kering"
+            },
+            {
+                "product_id": 15,
+                "photo": "https://source.unsplash.com/400x300?canvas",
+                "province": "Maluku",
+                "price": 2000000,
+                "category": "non-organik",
+                "user_name": "ria",
+                "name": "kanvas sisa"
+            },
+            {
+                "product_id": 16,
+                "photo": "https://source.unsplash.com/400x300?cardboard",
+                "province": "Sulawesi Utara",
+                "price": 400000,
+                "category": "non-organik",
+                "user_name": "bella",
+                "name": "kardus"
+            },
+            {
+                "product_id": 17,
+                "photo": "https://source.unsplash.com/400x300?paint",
+                "province": "Jambi",
+                "price": 850000,
+                "category": "non-organik",
+                "user_name": "anto",
+                "name": "kaleng cat"
+            },
+            {
+                "product_id": 18,
+                "photo": "https://source.unsplash.com/400x300?shirt",
+                "province": "Kalimantan Selatan",
+                "price": 550000,
+                "category": "non-organik",
+                "user_name": "hani",
+                "name": "kaos"
+            },
+            {
+                "product_id": 19,
+                "photo": "https://source.unsplash.com/400x300?newspaper",
+                "province": "Riau",
+                "price": 300000,
+                "category": "non-organik",
+                "user_name": "ryan",
+                "name": "koran bekas"
+            },
+            {
+                "product_id": 20,
+                "photo": "https://source.unsplash.com/400x300?straw",
+                "province": "Sulawesi Tenggara",
+                "price": 650000,
+                "category": "organik",
+                "user_name": "siska",
+                "name": "jerami"
+            }
+        ]
+    }
+}
