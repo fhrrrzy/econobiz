@@ -1,9 +1,9 @@
 const detailProductTemplate = (product) => `
 <div class="relative">
-<img src="${product.photo}" alt="${product.name}" class="rounded-3xl w-full filter brightness-90">
-<p class="bg-slate-300 rounded-tr-3xl rounded-bl-3xl p-4 py-2 absolute top-0 right-0 lg:p-3 normal-case lg:text-lg">${product.category}</p>
-<h2 class="font-bold text-2xl px-4 pt-4 capitalize md:text-[26px]">${product.name}</h2>
-<p class="font-semibold text-3xl px-4 pb-2 md:text-[34px]">Rp ${product.price}</p>
+<img src="${product.photo}" alt="${product.name}" class="rounded-3xl w-full filter brightness-90" tabindex="0">
+<p class="bg-slate-300 rounded-tr-3xl rounded-bl-3xl p-4 py-2 absolute top-0 right-0 lg:p-3 normal-case lg:text-lg" tabindex="0">${product.category}</p>
+<h2 class="font-bold text-2xl px-4 pt-4 capitalize md:text-[26px]" tabindex="0">${product.name}</h2>
+<p class="font-semibold text-3xl px-4 pb-2 md:text-[34px]" tabindex="0">Rp ${product.price}</p>
 
 <div class="p-4 capitalize flex items-center justify-between">
     <a href="#" class="flex items-center">
@@ -20,16 +20,16 @@ const detailProductTemplate = (product) => `
 
 <div class="px-4 md:text-lg">
 <div class="flex items-center py-2 capitalize font-bold">
-    <h2>Deskripsi</h2>
+    <h2 tabindex="0">Deskripsi</h2>
     <div class="border-r-[8rem] border-black h-1 ml-4 lg:border-r-[12rem]"></div>
 </div>
-<p class="text-justify pb-2">${product.description}</p>
+<p class="text-justify pb-2" tabindex="0">${product.description}</p>
 
 <div class="flex items-center py-2 capitalize font-bold">
-    <h2>Potensi penggunaan/pengolahan lebih lanjut</h2>
+    <h2 tabindex="0">Potensi penggunaan/pengolahan lebih lanjut</h2>
     <div class="border-r-[8rem] border-black h-1 ml-4 lg:border-r-[12rem]"></div>
 </div>
-<p class="text-justify pb-2">${product.potentials}</p>
+<p class="text-justify pb-2" tabindex="0">${product.potentials}</p>
 </div>
 `;
 

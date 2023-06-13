@@ -1,5 +1,5 @@
 import data from '../DATA.json';
-import { detailProductTemplate } from './templates/card';
+import { detailProductTemplate } from './templates/detail';
 
 const main = () => {
   const detailProduct = document.querySelector('#detail-product');
