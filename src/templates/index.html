@@ -1,21 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css" type="text/css"> 
+    <link rel="stylesheet" href="../styles/style.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body class="bg-ecn">
-    <div id="container-list" class="m-4 p-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+    <!-- search&filter section -->
+    <section>
+        <div class="px-[35px] pt-3 mb-[37px] flex items-center">
+            <h1 class="pr-4 font-bold text-xl">Waste List</h1>
+            <hr class="h-1 w-20 bg-black">
+        </div>
+        <div
+            class="max-w-sm md:max-w-full md:grid-cols-4 md:m-6 bg-white border grid grid-cols-1 gap-3 border-slate-200 rounded-xl mx-auto shadow-md p-5">
+            <div>
+                <h1 class="font-bold text-base">Search</h1>
+                <label for="simple-search" class="sr-only">Search</label>
+                <div class="relative w-full">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <input type="text" id="simple-search"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Cari Produk" required>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="font-bold text-base">Category</h1>
+                <div class="mb-2 bg-[#F1F1F1] divide-y divide-gray-100 rounded-lg shadow">
+                    <select name="" id=""
+                        class="text-[#6F6F6F] bg-white border border-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 flex items-center w-full">
+                        <option value="">Pilih Kategori</option>
+                        <option value="">Organik</option>
+                        <option value="">Non-Organik</option>
+                        <option value="">Kimia</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="font-bold text-base">Location</h1>
+                <div class="mb-2 bg-[#F1F1F1] divide-y divide-gray-100 rounded-lg shadow">
+                    <select id="dropdownLocation"
+                        class="text-[#6F6F6F] bg-white border border-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 flex items-center w-full">
+                        <option>Pilih Provinsi</option>
+                        <option>
+                            Nanggroe Aceh Darussalam
+                        </option>
+                        <option>
+                            Sumatera Utara
+                        </option>
+                        <option>
+                            Sumatera Selatan
+                        </option>
+                        <option>
+                            Sumatera Barat
+                        </option>
+                        <option>
+                            Bengkulu
+                        </option>
+                        <option>
+                            Kepulauan Riau
+                        </option>
+                        <option>
+                            Jambi
+                        </option>
+                        <option>
+                            Lampung
+                        </option>
+                        <option>
+                            Bangka Belitung
+                        </option>
+                        <option>
+                            Kalimantan Barat
+                        </option>
+                        <option>
+                            Kalimantan Timur
+                        </option>
+                        <option>
+                            Kalimantan Selatan
+                        </option>
+                        <option>
+                            Kalimantan Tengah
+                        </option>
+                        <option>
+                            Kalimantan Utara
+                        </option>
+                        <option>
+                            Banten
+                        </option>
+                        <option>
+                            DKI Jakarta
+                        </option>
+                        <option>
+                            Jawa Barat
+                        </option>
+                        <option>
+                            Jawa Tengah
+                        </option>
+                        <option>
+                            Daerah Istimewa Yogyakarta
+                        </option>
+                        <option>
+                            Jawa Timur
+                        </option>
+                        <option>
+                            Bali
+                        </option>
+                        <option>
+                            Nusa Tenggara Timur
+                        </option>
+                        <option>
+                            Nusa Tenggara Barat
+                        </option>
+                        <option>
+                            Gorontalo
+                        </option>
+                        <option>
+                            Sulawesi Barat
+                        </option>
+                        <option>
+                            Sulawesi Tengah
+                        </option>
+                        <option>
+                            Sulawesi Utara
+                        </option>
+                        <option>
+                            Sulawesi Tenggara
+                        </option>
+                        <option>
+                            Sulawesi Selatan
+                        </option>
+                        <option>
+                            Maluku Utara
+                        </option>
+                        <option>
+                            Maluku
+                        </option>
+                        <option>
+                            Papua Barat
+                        </option>
+                        <option>
+                            Papua
+                        </option>
+                        <option>
+                            Papua Tengah
+                        </option>
+                        <option>
+                            Papua Pegunungan
+                        </option>
+                        <option>
+                            Papua Selatan
+                        </option>
+                        <option>
+                            Papua Barat Daya
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="font-bold text-base">Price</h1>
+                <div class="mb-2 bg-[#F1F1F1] divide-y divide-gray-100 rounded-lg shadow">
+                    <select name="" id=""
+                        class="text-[#6F6F6F] bg-white border border-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 flex items-center w-full">
+                        <option value="">Harga</option>
+                        <option value="">Harga : Rendah ke Tinggi</option>
+                        <option value="">Harga : Tinggi ke Rendah</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- search&filter section -->
+
+    <!-- poduct list -->
+    <div id="container-list" class="m-4 p-4 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
     </div>
-    
+
     <div id="button-page" class="flex justify-end mr-6 mb-6 text-white">
         <div id="prev" class="bg-greenbase rounded-full flex p-2 mx-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
             </svg>
             <button>Previous</button>
@@ -23,10 +202,174 @@
         <div id="page-number" class="flex text-black"></div>
         <div id="next" class="bg-greenbase rounded-full flex p-2 mx-2">
             <button>Next</button>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
             </svg>
         </div>
-    </div>    
+    </div>
+    <!-- poduct list -->
+
+    <!-- our team section -->
+    <section class="w-full pb-5 bg-[#B0E6BF] font-nunito">
+        <h1 class="px-[35px] pt-5 font-extrabold text-2xl mb-1">Our Team</h1>
+        <hr class="mx-[60px] h-1 w-28 mb-[30px] bg-[#0FA958]">
+        <div class="container grid grid-cols-1 gap-10 md:grid-cols-2">
+            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20">
+                <div class="relative w-fit">
+                    <svg class="absolute -bottom-24 -left-36 w-[400px] h-[300px]" viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#0FA958"
+                            d="M15.5,11.7C6,25.5,-25.6,29.2,-31.9,17.4C-38.1,5.5,-19.1,-22,-3.3,-23.9C12.5,-25.8,25.1,-2.1,15.5,11.7Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                    <img class="relative w-20 h-20" src="./img/roji.png">
+                </div>
+                <div>
+                    <div class="font-bold text-base">Fahruraji</div>
+                    <div class="font-normal text-sm mb-2">"Hidup adalah undian"</div>
+                    <div class="flex items-start">
+                        <a href="#">
+                            <img src="./img/igdark.png" alt="instagram" class="pr-[14px]">
+                        </a>
+                        <a href="#">
+                            <img src="./img/github.png" alt="github" class="pr-[14px]">
+                        </a>
+                        <a href="#">
+                            <img src="./img/linkedin.png" alt="facebook" class="pr-[14px]">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20">
+                <div class="relative w-fit">
+                    <svg class="absolute -bottom-24 -left-36 w-[400px] h-[300px]" viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#0FA958"
+                            d="M15.5,11.7C6,25.5,-25.6,29.2,-31.9,17.4C-38.1,5.5,-19.1,-22,-3.3,-23.9C12.5,-25.8,25.1,-2.1,15.5,11.7Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                    <img class="relative w-20 h-20" src="./img/aliya.png">
+                </div>
+                <div>
+                    <div class="font-bold text-base">Siti Aliya Ngakasah</div>
+                    <div class="font-normal text-sm mb-2">"Hidup itu pilihan"</div>
+                    <div class="flex items-start">
+                        <a href="#">
+                            <img src="./img/igdark.png" alt="instagram" class="pr-[14px]">
+                        </a>
+                        <a href="#">
+                            <img src="./img/github.png" alt="github" class="pr-[14px]">
+                        </a>
+                        <a href="#">
+                            <img src="./img/linkedin.png" alt="facebook" class="pr-[14px]">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20">
+                <div class="relative w-fit">
+                    <svg class="absolute -bottom-24 -left-36 w-[400px] h-[300px]" viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#0FA958"
+                            d="M15.5,11.7C6,25.5,-25.6,29.2,-31.9,17.4C-38.1,5.5,-19.1,-22,-3.3,-23.9C12.5,-25.8,25.1,-2.1,15.5,11.7Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                    <img class="relative w-20 h-20" src="./img/dea.png">
+                </div>
+                <div>
+                    <div class="font-bold text-base">Deatrisya Mirela Harahap</div>
+                    <div class="font-normal text-sm mb-2">"Pergi karena tugas,<br>pulang karena beras."</div>
+                    <div class="flex items-start">
+                        <a href="#">
+                            <img src="./img/igdark.png" alt="instagram" class="pr-[14px]">
+                        </a>
+                        <a href="#">
+                            <img src="./img/github.png" alt="github" class="pr-[14px]">
+                        </a>
+                        <a href="#">
+                            <img src="./img/linkedin.png" alt="facebook" class="pr-[14px]">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20">
+                <div class="relative w-fit">
+                    <svg class="absolute -bottom-24 -left-36 w-[400px] h-[300px]" viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#0FA958"
+                            d="M15.5,11.7C6,25.5,-25.6,29.2,-31.9,17.4C-38.1,5.5,-19.1,-22,-3.3,-23.9C12.5,-25.8,25.1,-2.1,15.5,11.7Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                    <img class="relative w-20 h-20" src="./img/vrl.png">
+                </div>
+                <div>
+                    <div class="font-bold text-base">Shafwan Almer Varrel</div>
+                    <div class="font-normal text-sm mb-2">"Apapun yang terjadi,<br>tetaplah bernafas"</div>
+                    <div class="flex items-start">
+                        <a href="#">
+                            <img src="./img/igdark.png" alt="instagram" class="pr-[14px]">
+                        </a>
+                        <a href="#">
+                            <img src="./img/github.png" alt="github" class="pr-[14px]">
+                        </a>
+                        <a href="#">
+                            <img src="./img/linkedin.png" alt="facebook" class="pr-[14px]">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our team section -->
+
+    <!-- feedback -->
+    <!-- feedback -->
+
+    <!-- footer -->
+    <footer class="bg-black font-nunito">
+        <div class="px-[35px] py-[50px] text-white grid grid-cols-1 gap-10 md:grid-cols-2 md:px-[60px] lg:grid-cols-3 lg:px-[75px]">
+            <div>
+                <h2 class="font-bold text-xl mb-[34px]">About us</h2>
+                <p class="font-normal text-base text-secondary text-justify w-3/4">Transforming waste into profit, Econobiz is sustainable
+                    business brand committed to responsible waste management and economic value creation. Join us in
+                    building a greener, prosperous future.</p>
+            </div>
+            <div class="md:col-start-1 md:row-start-2">
+                <img src="./img/logo.png" alt="logo" class="w-[300px] h-[65px]">
+            </div>
+            <div class="md:col-start-2 md:row-start-1">
+                <h2 class="font-bold text-xl mb-[34px]">Contact Info</h2>
+                <ul class="font-normal text-base text-secondary">
+                    <li class="pb-4">info@example.com</li>
+                    <li class="pb-4">123 Main Street, City, Country</li>
+                    <li>+1 123-456-7890</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="font-bold text-xl mb-[34px]">Sosial Media</h2>
+                <a href="#" class="flex items-start">
+                    <img src="./img/ig.png" alt="instagram" class="pr-[14px]">
+                    <span class="font-normal text-base text-secondary pb-4">Econobiz</span>
+                </a>
+                <a href="#" class="flex items-start">
+                    <img src="./img/twitter.png" alt="twitter" class="pr-[14px]">
+                    <span class="font-normal text-base text-secondary pb-4">Econobiz_official</span>
+                </a>
+                <a href="#" class="flex items-start">
+                    <img src="./img/fb.png" alt="facebook" class="pr-[14px]">
+                    <span class="font-normal text-base text-secondary">Econobiz_official</span>
+                </a>
+            </div>
+        </div>
+        <hr class="mx-[35px] md:mx-[60px] lg:mx-[75px]">
+        <p
+            class="mx-[35px] mt-[30px] pb-[35px] font-normal text-base text-footer text-center md:mx-[60px] md:text-left lg:mx-[75px] lg:text-left">
+            Copyright 2023 All right reserved | This web is made by <span class="text-ijo">econobiz</span></p>
+    </footer>
+    <!-- footer -->
+
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
+
 </html>
