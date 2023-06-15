@@ -1,7 +1,10 @@
+import { initFlowbite } from 'flowbite';
+import $ from 'jquery';
 import data from '../DATA.json';
 import { productCardTemplate } from './templates/card';
 
 const main = () => {
+  initFlowbite()
   const productList = document.querySelector('#container-list');
   const dataProduct = data.data.products;
   const itemsPerPage = 12;
