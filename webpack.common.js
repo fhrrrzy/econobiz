@@ -15,7 +15,9 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        include: path.resolve(__dirname, 'src/css'),
+        include: [
+          path.resolve(__dirname, 'src/css'),
+        ],
         use: [
           {
             loader: 'style-loader',
@@ -33,6 +35,23 @@ module.exports = {
                 ident: 'postcss',
                 plugins: [require('tailwindcss'), require('autoprefixer')],
               },
+            },
+          },
+        ],
+      },
+      {
+        test: /swiper-bundle\.min\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+              publicPath: '../fonts/',
             },
           },
         ],
