@@ -1,5 +1,5 @@
 const productCardTemplate = (product) => `
-  <div class="aspect=[4/3] rounded-3xl relative bg-greenbgimage text-white">
+  <div class="aspect-4/3 rounded-3xl relative bg-greenbgimage text-white">
     <div class="absolute top-0 p-2 lg:p-3 z-10">
         <a href="#" id="profile" class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 lg:w-[36px] lg:h-[36px]">
