@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         'font-family': ['Nunito', 'sans-serif'],
       },
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
+      },
       colors: {
         ecn: '#F8FAF5',
         greenbase: '#4ECB71',
