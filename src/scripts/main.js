@@ -1,23 +1,24 @@
 import { initFlowbite } from 'flowbite';
-import EconobizAPI from './data/data';
+import EconobizAPI from './data/econobizAPI';
 import { productCardTemplate } from './templates/card';
 
 const main = async () => {
   initFlowbite();
   const productList = document.querySelector('#container-list');
-  const dataProduct = await EconobizAPI.listProduct();
+  const dataProducts = await EconobizAPI.listProduct();
+  const arrayDataProducts = dataProducts.data.products;
   const itemsPerPage = 12;
   let currentPage = 1;
 
-  const displayProduct = (data) => {
+  const displayProduct = (products) => {
     productList.innerHTML = '';
-    data.forEach((product) => {
+    products.forEach((product) => {
       productList.innerHTML += productCardTemplate(product);
     });
   };
 
   const renderPagination = () => {
-    const totalItems = dataProduct.length;
+    const totalItems = arrayDataProducts.length;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
     const pageNumbersContainer = document.querySelector('#page-number');
@@ -60,8 +61,9 @@ const main = async () => {
   const renderProductList = () => {
     const start = (currentPage - 1) * itemsPerPage;
     const end = start + itemsPerPage;
-    const displayedData = dataProduct.slice(start, end);
+    const displayedData = arrayDataProducts.slice(start, end);
     displayProduct(displayedData);
+    renderPagination();
   };
 
   const prevButton = document.querySelector('#prev');
@@ -76,7 +78,7 @@ const main = async () => {
   });
 
   nextButton.addEventListener('click', () => {
-    const totalItems = dataProduct.length;
+    const totalItems = arrayDataProducts.length;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
     if (currentPage < totalPages) {
@@ -86,10 +88,7 @@ const main = async () => {
     }
   });
 
-  if (dataProduct) {
-    renderPagination();
-    renderProductList();
-  }
+  renderProductList();
 };
 
 export default main;
