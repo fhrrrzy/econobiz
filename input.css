@@ -6,4 +6,16 @@
     body {
         font-family: 'Nunito', sans-serif;
     }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
 }
