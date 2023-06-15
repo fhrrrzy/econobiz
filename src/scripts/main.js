@@ -1,9 +1,25 @@
 import { initFlowbite } from 'flowbite';
+import Swiper from 'swiper';
 import EconobizAPI from './data/econobizAPI';
 import { productCardTemplate } from './templates/card';
 
 const main = async () => {
   initFlowbite();
+  // eslint-disable-next-line no-unused-vars
+  const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    // centeredSlides: true,
+    freeMode: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      hide: true,
+    },
+    mousewheel: true,
+    mousewheelControl: true,
+    mousewheelReleaseOnEdges: true,
+  });
+
   const productList = document.querySelector('#container-list');
   const dataProducts = await EconobizAPI.listProduct();
   const arrayDataProducts = dataProducts.data.products;
