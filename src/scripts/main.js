@@ -1,9 +1,9 @@
-import data from '../DATA.json';
+import EconobizAPI from './data/data';
 import { productCardTemplate } from './templates/card';
 
-const main = () => {
+const main = async () => {
   const productList = document.querySelector('#container-list');
-  const dataProduct = data.data.products;
+  const dataProduct = await EconobizAPI.listProduct();
   const itemsPerPage = 12;
   let currentPage = 1;
 
@@ -84,8 +84,10 @@ const main = () => {
     }
   });
 
-  renderPagination();
-  renderProductList();
+  if (dataProduct) {
+    renderPagination();
+    renderProductList();
+  }
 };
 
 export default main;
