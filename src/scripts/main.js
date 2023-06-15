@@ -1,7 +1,9 @@
+import { initFlowbite } from 'flowbite';
 import EconobizAPI from './data/data';
 import { productCardTemplate } from './templates/card';
 
 const main = async () => {
+  initFlowbite();
   const productList = document.querySelector('#container-list');
   const dataProduct = await EconobizAPI.listProduct();
   const itemsPerPage = 12;
