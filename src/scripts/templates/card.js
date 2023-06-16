@@ -18,7 +18,7 @@ const productCardTemplate = (product) => `
         </div>
         <div class="absolute p-4 bottom-0 lg:[18px] capitalize">
             <h2 class="font-bold text-3xl lg:text-[32px]">${product.name}</h2>
-            <p class="font-semibold text-lg lg:text-xl">Rp ${product.price}</p>
+            <p class="font-semibold text-lg lg:text-xl">Rp ${product.price.toLocaleString('id-ID')}</p>
         </div>
     </a>
   </div>

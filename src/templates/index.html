@@ -83,8 +83,8 @@
 
     <section>
         <div class="px-[35px] pt-3 mb-[37px] flex items-center">
-            <h1 class="pr-4 font-bold text-xl">Waste List</h1>
-            <hr class="h-1 w-20 bg-black" />
+            <h1 class="pr-4 font-extrabold text-2xl">Waste List</h1>
+            <hr class="h-1 w-20 bg-greenbgimage" />
         </div>
         <div
             class="max-w-sm md:max-w-full md:grid-cols-4 md:m-6 bg-white border grid grid-cols-1 gap-3 border-slate-200 rounded-xl mx-auto shadow-md p-5">
@@ -109,7 +109,7 @@
             <div>
                 <h1 class="font-bold text-base">Category</h1>
                 <div class="mb-2 bg-[#F1F1F1] divide-y divide-gray-100 rounded-lg shadow">
-                    <select name="" id=""
+                    <select name="category" id="category"
                         class="text-[#6F6F6F] bg-white border border-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 flex items-center w-full">
                         <option value="">Pilih Kategori</option>
                         <option value="">Organik</option>
@@ -204,19 +204,17 @@
     <!-- poduct list -->
 
     <!-- our team section -->
-    <section class="w-full pb-5 bg-[#B0E6BF] font-nunito">
-        <h1 class="px-[35px] pt-5 font-extrabold text-2xl mb-1">Our Team</h1>
-        <hr class="mx-[60px] h-1 w-28 mb-[30px] bg-[#0FA958]" />
-        <div class="container grid grid-cols-1 gap-10 md:grid-cols-2">
-            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20">
-                <div class="relative w-fit">
-                    <svg class="absolute -bottom-24 -left-36 w-[400px] h-[300px]" viewBox="0 0 200 200"
+    <section class="w-full bg-[#C5EDD0] font-nunito h-[600px] my-16">
+        <h1 class="text-center pt-20 font-extrabold text-2xl mb-1 text-[#18340E]">Our Team</h1>
+        <hr class="mx-auto h-1 w-28 mb-[30px] bg-[#18340E]" />
+        <div class="container w-max mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 mt-12">
+            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20 gap-5">
+                <div class="relative w-fit w-30 aspect-square">
+                    <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#0FA958"
-                            d="M15.5,11.7C6,25.5,-25.6,29.2,-31.9,17.4C-38.1,5.5,-19.1,-22,-3.3,-23.9C12.5,-25.8,25.1,-2.1,15.5,11.7Z"
-                            transform="translate(100 100)" />
+                          <circle fill="#FFA31A" cx="100" cy="100" r="100" />
                     </svg>
-                    <img class="relative w-20 h-20" src="./image/member/roji.png" />
+                    <img class="relative w-full aspect-square" src="./image/member/roji.png" />
                 </div>
                 <div>
                     <div class="font-bold text-base">Fahruraji</div>
@@ -234,18 +232,40 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20">
-                <div class="relative w-fit">
-                    <svg class="absolute -bottom-24 -left-36 w-[400px] h-[300px]" viewBox="0 0 200 200"
+            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20 gap-5">
+                <div class="relative w-fit w-30 aspect-square">
+                    <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#0FA958"
-                            d="M15.5,11.7C6,25.5,-25.6,29.2,-31.9,17.4C-38.1,5.5,-19.1,-22,-3.3,-23.9C12.5,-25.8,25.1,-2.1,15.5,11.7Z"
-                            transform="translate(100 100)" />
+                          <circle fill="#FFA31A" cx="100" cy="100" r="100" />
                     </svg>
-                    <img class="relative w-20 h-20" src="./image/member/aliya.png" />
+                    <img class="relative w-full aspect-square" src="./image/member/dea.png" />
                 </div>
                 <div>
-                    <div class="font-bold text-base">Siti Aliya Ngakasah</div>
+                    <div class="font-bold text-base">Deatrisya Mirela Harahap</div>
+                    <div class="font-normal text-sm mb-2">"Hidup adalah kebahagiaan"</div>
+                    <div class="flex items-start">
+                        <a href="#">
+                            <img src="./image/icon/igdark.png" alt="instagram" class="pr-[14px]" />
+                        </a>
+                        <a href="#">
+                            <img src="./image/icon/github.png" alt="github" class="pr-[14px]" />
+                        </a>
+                        <a href="#">
+                            <img src="./image/icon/linkedin.png" alt="facebook" class="pr-[14px]" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20 gap-5">
+                <div class="relative w-fit w-30 aspect-square">
+                    <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg">
+                          <circle fill="#FFA31A" cx="100" cy="100" r="100" />
+                    </svg>
+                    <img class="relative w-full aspect-square" src="./image/member/aliya.png" />
+                </div>
+                <div>
+                    <div class="font-bold text-base">Siti Aliyah Ngakasah</div>
                     <div class="font-normal text-sm mb-2">"Hidup itu pilihan"</div>
                     <div class="flex items-start">
                         <a href="#">
@@ -260,49 +280,17 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20">
-                <div class="relative w-fit">
-                    <svg class="absolute -bottom-24 -left-36 w-[400px] h-[300px]" viewBox="0 0 200 200"
+            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20 gap-5">
+                <div class="relative w-fit w-30 aspect-square">
+                    <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#0FA958"
-                            d="M15.5,11.7C6,25.5,-25.6,29.2,-31.9,17.4C-38.1,5.5,-19.1,-22,-3.3,-23.9C12.5,-25.8,25.1,-2.1,15.5,11.7Z"
-                            transform="translate(100 100)" />
+                          <circle fill="#FFA31A" cx="100" cy="100" r="100" />
                     </svg>
-                    <img class="relative w-20 h-20" src="./image/member/dea.png" />
-                </div>
-                <div>
-                    <div class="font-bold text-base">Deatrisya Mirela Harahap</div>
-                    <div class="font-normal text-sm mb-2">
-                        "Pergi karena tugas,<br />pulang karena beras."
-                    </div>
-                    <div class="flex items-start">
-                        <a href="#">
-                            <img src="./image/icon/igdark.png" alt="instagram" class="pr-[14px]" />
-                        </a>
-                        <a href="#">
-                            <img src="./image/icon/github.png" alt="github" class="pr-[14px]" />
-                        </a>
-                        <a href="#">
-                            <img src="./image/icon/linkedin.png" alt="facebook" class="pr-[14px]" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="mx-auto w-96 pl-5 flex items-center space-x-4 md:pl-20">
-                <div class="relative w-fit">
-                    <svg class="absolute -bottom-24 -left-36 w-[400px] h-[300px]" viewBox="0 0 200 200"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#0FA958"
-                            d="M15.5,11.7C6,25.5,-25.6,29.2,-31.9,17.4C-38.1,5.5,-19.1,-22,-3.3,-23.9C12.5,-25.8,25.1,-2.1,15.5,11.7Z"
-                            transform="translate(100 100)" />
-                    </svg>
-                    <img class="relative w-20 h-20" src="./image/member/vrl.png" />
+                    <img class="relative w-full aspect-square" src="./image/member/aliya.png" />
                 </div>
                 <div>
                     <div class="font-bold text-base">Shafwan Almer Varrel</div>
-                    <div class="font-normal text-sm mb-2">
-                        "Apapun yang terjadi,<br />tetaplah bernafas"
-                    </div>
+                    <div class="font-normal text-sm mb-2">"Apapun yang terjadi, tetaplah bernafas"</div>
                     <div class="flex items-start">
                         <a href="#">
                             <img src="./image/icon/igdark.png" alt="instagram" class="pr-[14px]" />
@@ -316,13 +304,14 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
     <!-- our team section -->
 
     <!-- feedback -->
     <div class="relative h-[600px] w-full">
-        <h1 class="text-center font-sans text-2xl font-bold pt-7">
+        <h1 class="text-center text-2xl font-extrabold pt-7">
             Recent Review
         </h1>
         <hr class="mx-auto mt-2 h-1 w-44 bg-greenbgimage" />
@@ -338,7 +327,7 @@
                         <img src="./image/profile.jpg" alt="profile reviewer" class="rounded-full w-14 h-14">
 
                         <div>
-                            <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">Siti Aliya
+                            <p class="break-words text-md font-semibold mb-1 max-w-[10rem]">Siti Aliya
                                 Ngakasah</p>
                             <div class="star">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -381,7 +370,7 @@
 
                     </div>
                     <div class="text-justify">
-                        <q class="text-slate-700 font-sans break-all text-sm">Lorem ipsum dolor, sit amet consectetur
+                        <q class="text-slate-700 break-all text-sm">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Saepe
                             repudiandae recusandae exercitationem explicabo itaque facere aperiam, quo distinctio quidem
                             at.</q>
@@ -394,7 +383,7 @@
                         <img src="./image/profile.jpg" alt="profile reviewer" class="rounded-full w-14 h-14">
 
                         <div>
-                            <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">Siti Aliya
+                            <p class="break-words text-md font-semibold mb-1 max-w-[10rem]">Siti Aliya
                                 Ngakasah</p>
                             <div class="star">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -437,7 +426,7 @@
 
                     </div>
                     <div class="text-justify">
-                        <q class="text-slate-700 font-sans break-all text-sm">Lorem ipsum dolor, sit amet consectetur
+                        <q class="text-slate-700 break-all text-sm">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Saepe
                             repudiandae recusandae exercitationem explicabo itaque facere aperiam, quo distinctio quidem
                             at.</q>
@@ -450,7 +439,7 @@
                         <img src="./image/profile.jpg" alt="profile reviewer" class="rounded-full w-14 h-14">
 
                         <div>
-                            <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">Siti Aliya
+                            <p class="break-words text-md font-semibold mb-1 max-w-[10rem]">Siti Aliya
                                 Ngakasah</p>
                             <div class="star">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -493,7 +482,7 @@
 
                     </div>
                     <div class="text-justify">
-                        <q class="text-slate-700 font-sans break-all text-sm">Lorem ipsum dolor, sit amet consectetur
+                        <q class="text-slate-700 break-all text-sm">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Saepe
                             repudiandae recusandae exercitationem explicabo itaque facere aperiam, quo distinctio quidem
                             at.</q>
@@ -506,7 +495,7 @@
                         <img src="./image/profile.jpg" alt="profile reviewer" class="rounded-full w-14 h-14">
 
                         <div>
-                            <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">Siti Aliya
+                            <p class="break-words text-md font-semibold mb-1 max-w-[10rem]">Siti Aliya
                                 Ngakasah</p>
                             <div class="star">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -549,7 +538,7 @@
 
                     </div>
                     <div class="text-justify">
-                        <q class="text-slate-700 font-sans break-all text-sm">Lorem ipsum dolor, sit amet consectetur
+                        <q class="text-slate-700 break-all text-sm">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Saepe
                             repudiandae recusandae exercitationem explicabo itaque facere aperiam, quo distinctio quidem
                             at.</q>
@@ -562,7 +551,7 @@
                         <img src="./image/profile.jpg" alt="profile reviewer" class="rounded-full w-14 h-14">
 
                         <div>
-                            <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">Siti Aliya
+                            <p class="break-words text-md font-semibold mb-1 max-w-[10rem]">Siti Aliya
                                 Ngakasah</p>
                             <div class="star">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -604,7 +593,7 @@
                         </div>
                     </div>
                     <div class="text-justify">
-                        <q class="text-slate-700 font-sans break-all text-sm">Lorem ipsum dolor, sit amet consectetur
+                        <q class="text-slate-700 break-all text-sm">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Saepe
                             repudiandae recusandae exercitationem explicabo itaque facere aperiam, quo distinctio quidem
                             at.</q>
@@ -617,7 +606,7 @@
                         <img src="./image/profile.jpg" alt="profile reviewer" class="rounded-full w-14 h-14">
 
                         <div>
-                            <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">Siti Aliya
+                            <p class="break-words text-md font-semibold mb-1 max-w-[10rem]">Siti Aliya
                                 Ngakasah</p>
                             <div class="star">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -660,7 +649,7 @@
 
                     </div>
                     <div class="text-justify">
-                        <q class="text-slate-700 font-sans break-all text-sm">Lorem ipsum dolor, sit amet consectetur
+                        <q class="text-slate-700 break-all text-sm">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Saepe
                             repudiandae recusandae exercitationem explicabo itaque facere aperiam, quo distinctio quidem
                             at.</q>
@@ -673,7 +662,7 @@
                         <img src="./image/profile.jpg" alt="profile reviewer" class="rounded-full w-14 h-14">
 
                         <div>
-                            <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">Siti Aliya
+                            <p class="break-words text-md font-semibold mb-1 max-w-[10rem]">Siti Aliya
                                 Ngakasah</p>
                             <div class="star">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -716,7 +705,7 @@
 
                     </div>
                     <div class="text-justify">
-                        <q class="text-slate-700 font-sans break-all text-sm">Lorem ipsum dolor, sit amet consectetur
+                        <q class="text-slate-700 break-all text-sm">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Saepe
                             repudiandae recusandae exercitationem explicabo itaque facere aperiam, quo distinctio quidem
                             at.</q>
@@ -729,7 +718,7 @@
                         <img src="./image/profile.jpg" alt="profile reviewer" class="rounded-full w-14 h-14">
 
                         <div>
-                            <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">Siti Aliya
+                            <p class="break-words text-md font-semibold mb-1 max-w-[10rem]">Siti Aliya
                                 Ngakasah</p>
                             <div class="star">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -772,7 +761,7 @@
 
                     </div>
                     <div class="text-justify">
-                        <q class="text-slate-700 font-sans break-all text-sm">Lorem ipsum dolor, sit amet consectetur
+                        <q class="text-slate-700 break-all text-sm">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Saepe
                             repudiandae recusandae exercitationem explicabo itaque facere aperiam, quo distinctio quidem
                             at.</q>
@@ -785,7 +774,7 @@
                         <img src="./image/profile.jpg" alt="profile reviewer" class="rounded-full w-14 h-14">
 
                         <div>
-                            <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">Siti Aliya
+                            <p class="break-words text-md font-semibold mb-1 max-w-[10rem]">Siti Aliya
                                 Ngakasah</p>
                             <div class="star">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -827,7 +816,7 @@
                         </div>
                     </div>
                     <div class="text-justify">
-                        <q class="text-slate-700 font-sans break-all text-sm">Lorem ipsum dolor, sit amet consectetur
+                        <q class="text-slate-700 break-all text-sm">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Saepe
                             repudiandae recusandae exercitationem explicabo itaque facere aperiam, quo distinctio quidem
                             at.</q>
