@@ -22,13 +22,13 @@ const main = async () => {
 
   const productList = document.querySelector('#container-list');
   const dataProducts = await EconobizAPI.listProduct();
-  const arrayDataProducts = dataProducts.data.products;
+  const arrayDataProducts = dataProducts.products;
   const itemsPerPage = 12;
   let currentPage = 1;
 
-  const displayProduct = (products) => {
+  const displayProduct = (arrayDataProducts) => {
     productList.innerHTML = '';
-    products.forEach((product) => {
+    arrayDataProducts.forEach((product) => {
       productList.innerHTML += productCardTemplate(product);
     });
   };
@@ -105,8 +105,10 @@ const main = async () => {
   });
 
   const reviewList = document.querySelector('#review-card');
-  const review = await EconobizAPI.feedback();
-  const reviewData = review.feedback;
+  const review = await EconobizAPI.getAllFeedback();
+  console.log(review);
+  const reviewData = review.feedbacks;
+  console.log(reviewData);
 
   const displayFeedback = (feedbacks) => {
     reviewList.innerHTML = '';

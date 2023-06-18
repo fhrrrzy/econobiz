@@ -143,30 +143,29 @@
                             </div>
                             <!-- Modal body -->
                             <div class="px-6 py-6 lg:px-8">
-                                <form class="space-y-6" action="#">
+                                <form class="space-y-6" action="POST" enctype="multipart/form-data">
                                     <div class="md:grid md:grid-cols-2 md:gap-4">
                                         <div class="my-2">
                                             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                                for="file_input">Foto Limbah</label>
+                                                for="photo">Foto Limbah</label>
                                             <input
                                                 class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                                                aria-describedby="file_input_help" id="file_input" type="file" required>
+                                                aria-describedby="file_input_help" id="photo" name="photo" type="file" required>
                                             <small class="mt-1 text-gray-500 dark:text-gray-300"
-                                                id="file_input_help">JPG, JPEG,
-                                                PNG, or WEBP (MAX. 1 Mb).</small>
+                                                id="file_input_help">JPG, JPEG or PNG(MAX. 2 Mb).</small>
                                         </div>
                                         <div class="my-2">
-                                            <label for="waste_name"
+                                            <label for="name"
                                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
                                                 Limbah</label>
-                                            <input type="text" id="waste_name" name="waste_name"
+                                            <input type="text" id="name" name="name"
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                                 placeholder="Mis. Putih Telur" required>
                                         </div>
                                         <div class="my-2">
-                                            <label for="waste_category"
+                                            <label for="category"
                                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kategori</label>
-                                            <select id="waste_category"
+                                            <select id="category" name="category"
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                                 required>
                                                 <option value="">Pilih Kategori--</option>
@@ -196,10 +195,10 @@
                                                 placeholder="Deskripsikan limbah..." required></textarea>
                                         </div>
                                         <div class="my-2">
-                                            <label for="potentional"
+                                            <label for="potentials"
                                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Potensi
                                                 Limbah</label>
-                                            <textarea id="potentional" name="potentional" rows="4"
+                                            <textarea id="potentials" name="potentials" rows="4"
                                                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                                 placeholder="Jelaskan Potensi Limbah" required></textarea>
                                         </div>
@@ -489,8 +488,8 @@
             class="absolute -left-40 right-auto top-1/2 h-80 w-80 -translate-y-1/2 transform rounded-full bg-[#0FA958]">
         </div>
         <div class="swiper-container hide-scrollbar overflow-x-hidden absolute  left-0 top-1/2 -translate-y-1/2">
-            <div class="swiper-wrapper p-12 md:p-52 flex w-min snap-x snap-mandatory gap-5">
-                <div
+            <div id="review-card" class="swiper-wrapper p-12 md:p-52 flex w-min snap-x snap-mandatory gap-5">
+                <!-- <div
                     class="swiper-slide relative max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-lg w-72">
                     <img src="./image/quote.png" alt="quote" class="absolute -top-0  right-0 ">
                     <div class="flex flex-row gap-5 mb-4">
@@ -991,7 +990,7 @@
                             repudiandae recusandae exercitationem explicabo itaque facere aperiam, quo distinctio quidem
                             at.</q>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
