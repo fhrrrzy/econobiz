@@ -11,10 +11,9 @@ const productCardTemplate = (product) => `
             </div>
         </a>
     </div>
-    <a href="#" id="product">
-        <img src="${product.photo}" alt="background" class="rounded-3xl w-full filter brightness-50">
-        <div class="absolute top-0 p-2 right-0 lg:p-3 normal-case">
-            <p class="bg-slate-900 rounded-full px-4 py-2 text-sm lg:text-md">${product.category}</p>
+    <a href="#" id="product" class="w-full h-full block">
+        <div class="w-full h-full flex items-center justify-center"">
+            <img src="${product.photo}" alt="background" class="rounded-3xl object-cover w-full h-full filter brightness-50">
         </div>
         <div class="absolute p-4 bottom-0 lg:[18px] capitalize">
             <h2 class="font-bold text-3xl lg:text-[32px]">${product.name}</h2>
