@@ -2,6 +2,7 @@ import { initFlowbite } from 'flowbite';
 import Swiper from 'swiper';
 import EconobizAPI from './data/econobizAPI';
 import { productCardTemplate, feedbackCardTemplate } from './templates/card';
+import { productCardTemplate, feedbackCardTemplate } from './templates/card';
 
 const main = async () => {
   initFlowbite();
