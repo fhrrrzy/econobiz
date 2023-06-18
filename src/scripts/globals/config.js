@@ -1,5 +1,5 @@
 const CONFIG = {
-  BASE_URL: 'http://localhost:3000',
+  BASE_URL: 'http://localhost:9000',
   CACHE_NAME: 'Econobiz-v1',
 };
 
