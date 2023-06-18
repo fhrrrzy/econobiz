@@ -38,7 +38,7 @@ const feedbackCardTemplate = (feedback) => `
     <div class="flex flex-row gap-5 mb-4">
     <img src="./image/profile.jpg" alt="profile reviewer" class="rounded-full w-14 h-14">
     <div>
-        <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">${feedback.user_name}</p>
+        <p class="break-words text-md font-sans font-semibold mb-1 max-w-[10rem]">${feedback.full_name}</p>
         <div class="star">${ratingsElement(feedback.rating)}</div>
     </div>
     </div>
