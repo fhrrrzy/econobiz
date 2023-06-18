@@ -1,7 +1,7 @@
 import { initFlowbite } from 'flowbite';
 import Swiper from 'swiper';
 import EconobizAPI from './data/econobizAPI';
-import { productCardTemplate } from './templates/card';
+import { productCardTemplate, feedbackCardTemplate } from './templates/card';
 
 const main = async () => {
   initFlowbite();
@@ -104,7 +104,28 @@ const main = async () => {
     }
   });
 
+  const reviewList = document.querySelector('#review-card');
+  const review = await EconobizAPI.feedback();
+  const reviewData = review.feedback;
+
+  const displayFeedback = (feedbacks) => {
+    reviewList.innerHTML = '';
+
+    feedbacks.forEach((feedback) => {
+      const reviewItem = document.createElement('div');
+      reviewItem.classList.add('swiper-slide', 'relative', 'max-w-sm', 'p-6', 'bg-white', 'border', 'border-gray-200', 'rounded-lg', 'shadow-lg', 'w-72');
+      reviewItem.innerHTML = feedbackCardTemplate(feedback);
+
+      reviewList.appendChild(reviewItem);
+    });
+  };
+
+  const renderFeedback = () => {
+    displayFeedback(reviewData);
+  };
+
   renderProductList();
+  renderFeedback();
 };
 
 export default main;
