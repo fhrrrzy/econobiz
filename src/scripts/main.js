@@ -2,7 +2,6 @@ import { initFlowbite } from 'flowbite';
 import Swiper from 'swiper';
 import EconobizAPI from './data/econobizAPI';
 import { productCardTemplate, feedbackCardTemplate } from './templates/card';
-import { productCardTemplate, feedbackCardTemplate } from './templates/card';
 
 const main = async () => {
   initFlowbite();
@@ -107,9 +106,7 @@ const main = async () => {
 
   const reviewList = document.querySelector('#review-card');
   const review = await EconobizAPI.getAllFeedback();
-  console.log(review);
   const reviewData = review.feedbacks;
-  console.log(reviewData);
 
   const displayFeedback = (feedbacks) => {
     reviewList.innerHTML = '';
