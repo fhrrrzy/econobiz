@@ -29,7 +29,7 @@ export const heroElement = () => `<div class="grid grid-cols-1 md:grid-cols-2 py
 <div class="hidden md:flex relative p-10">
     <div class="bg-[#EEF3E7] rounded-full w-16 absolute top-12 left-6 aspect-square animate-scale-up-down">
     </div>
-    <div class="bg-[#EEF3E7] rounded-full w-7 absolute bottom-64 left-3 aspect-square"></div>
+    <div class="bg-[#EEF3E7] rounded-full w-7 absolute bottom-64 left-3 aspect-square animate-ping"></div>
     <img src="./image/hero.svg" alt="" class="my-auto">
 </div>
 </div>`;
