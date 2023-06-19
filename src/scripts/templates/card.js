@@ -15,12 +15,12 @@ const productCardTemplate = (product) => `
         <div class="w-full h-full flex items-center justify-center"">
             <img src="${product.photo}" alt="background" class="rounded-3xl object-cover w-full h-full filter brightness-50">
             <div class="absolute top-0 p-2 right-0 lg:p-3 normal-case">
-            <p class="bg-slate-900 rounded-full px-4 py-2 lg:text-lg">${product.category}</p>
+            <p class="bg-slate-900 rounded-full px-4 py-2 text-xs">${product.category}</p>
         </div>
         </div>
         <div class="absolute p-4 bottom-0 lg:[18px] capitalize">
-            <h2 class="font-semibold text-xl lg:text-2xl">${product.name}</h2>
-            <p class="font-medium text-lg lg:text-xl">Rp ${Number(product.price).toLocaleString('id-ID')}</p>
+            <h2 class="font-medium">${product.name}</h2>
+            <p class="font-medium text-gray-300">Rp ${Number(product.price).toLocaleString('id-ID')}</p>
         </div>
     </a>
   </div>

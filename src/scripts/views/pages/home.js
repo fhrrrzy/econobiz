@@ -1,20 +1,25 @@
-// import { navbarElement } from '../../templates/navbar';
 import { heroElement } from '../../templates/hero';
-import { ourTeamElement } from '../../templates/our-team';
+import { filterElement } from '../../templates/filter';
+import { productListElement } from '../../templates/product-list';
 
 const Home = {
   async render() {
     return `
         ${heroElement()}
-        ${ourTeamElement()}
+        ${filterElement()}
+        ${productListElement()}
     `;
   },
 
   async afterRender() {
-    // const restaurants = await RestaurantSource.all();
-    // console.log(restaurants);
-    // const restaurantList = document.querySelector('restaurant-list');
-    // restaurantList.restaurants = restaurants;
+    const homeLinks = document.querySelectorAll('li a');
+    homeLinks.forEach((link) => {
+      if (link.getAttribute('href') === '/') {
+        link.classList.add('text-greenbase');
+      } else {
+        link.classList.remove('text-greenbase');
+      }
+    });
   },
 };
 

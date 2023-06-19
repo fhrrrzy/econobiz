@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 import EconobizAPI from './data/econobizAPI';
 import { productCardTemplate, feedbackCardTemplate } from './templates/card';
+import LoginUtils from './utils/login-utils';
 
 const main = async () => {
   window.addEventListener('click', () => {
@@ -10,6 +11,12 @@ const main = async () => {
       const clonedElement = backdropElement.cloneNode(true);
       backdropElement.parentNode.replaceChild(clonedElement, backdropElement);
     });
+  });
+
+  const loginForm = document.getElementById('login-form');
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    LoginUtils.sendLogin();
   });
 
   const productList = document.querySelector('#container-list');
@@ -24,7 +31,8 @@ const main = async () => {
     productList.innerHTML = '';
 
     if (products.length === 0) {
-      productList.innerHTML = '<h2 class="text-center sm:col-span-2 md:col-span-3 xl:col-span-4">Opps! Produk yang Anda cari tidak ditemukan</h2>';
+      productList.innerHTML =
+        '<h2 class="text-center sm:col-span-2 md:col-span-3 xl:col-span-4">Opps! Produk yang Anda cari tidak ditemukan</h2>';
       return;
     }
 

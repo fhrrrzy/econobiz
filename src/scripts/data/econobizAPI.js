@@ -36,7 +36,27 @@ class EconobizAPI {
 
   static async filterProduct(searchname, category, location, pricesort) {
     try {
-      const response = await fetch(`${API_ENDPOINT.LIST}?searchname=${encodeURIComponent(searchname)}&category=${encodeURIComponent(category)}&location=${encodeURIComponent(location)}&pricesort=${encodeURIComponent(pricesort)}`);
+      const response = await fetch(
+        `${API_ENDPOINT.LIST}?searchname=${encodeURIComponent(
+          searchname,
+        )}&category=${encodeURIComponent(category)}&location=${encodeURIComponent(
+          location,
+        )}&pricesort=${encodeURIComponent(pricesort)}`,
+      );
+      const responseJson = await response.json();
+      return responseJson;
+    } catch (error) {
+      console.log(error);
+      return [];
+    }
+  }
+
+  static async sendLogin(data) {
+    try {
+      const response = await fetch(API_ENDPOINT.LOGIN, {
+        method: 'POST',
+        body: JSON.stringify(data),
+      });
       const responseJson = await response.json();
       return responseJson;
     } catch (error) {
