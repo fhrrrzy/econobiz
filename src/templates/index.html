@@ -11,485 +11,405 @@
 </head>
 
 <body class="bg-ecn overflow-x-hidden">
-    <!-- nav start -->
-    <nav class="flex justify-between bg-white p-5 md:m-10 md:rounded-full md:px-10">
-        <button class="md:hidden" type="button" id="open-drawer-button"
-            data-drawer-target="drawer-disable-body-scrolling" data-drawer-show="drawer-disable-body-scrolling"
-            data-drawer-body-scrolling="false" aria-controls="drawer-disable-body-scrolling">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
-                <path fill-rule="evenodd"
-                    d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
-                    clip-rule="evenodd" />
-            </svg>
-        </button>
+    <div id="wrapper" class="lg:px-10 xl:px-28">
+        <!-- nav start -->
+        <nav class="flex justify-between bg-white p-5 md:m-10 md:rounded-full md:px-10">
+            <button class="md:hidden" type="button" id="open-drawer-button"
+                data-drawer-target="drawer-disable-body-scrolling" data-drawer-show="drawer-disable-body-scrolling"
+                data-drawer-body-scrolling="false" aria-controls="drawer-disable-body-scrolling">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd"
+                        d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
 
-        <div class="">
-            <img src="./image/icon/logo.svg" alt="" />
-        </div>
+            <div class="">
+                <img src="./image/icon/logo.svg" alt="" />
+            </div>
 
-        <ul class="gap-5 items-center hidden md:flex">
-            <li><a href="javascript:void(0)" class="text-greenbase font-semibold">Home</a></li>
-            <li><a href="javascript:void(0)" class="text-gray-500 font-semibold">About us</a></li>
-            <li><a href="javascript:void(0)" class="text-gray-500 font-semibold">Our Team</a></li>
-            <li><a href="javascript:void(0)" class="text-gray-500 font-semibold">Mitra</a></li>
-        </ul>
-        <!-- <button class="px-10 py-3 font-semibold rounded-full text-greenbase shadow-lg border border-greenbase shadow-greenbgimage/20">
-                login
-            </button> -->
-        <button class="flex items-center gap-3" id="dropdown-trigger" data-dropdown-toggle="dropdown-menu">
-            <img src="https://picsum.photos/seed/picsum/200/300" alt="" class="w-8 aspect-square rounded-full" />
-            <div class="font-bold hidden md:block">Halo, dicoding !</div>
-        </button>
-
-        <div id="dropdown-menu"
-            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-trigger">
-                <li class="md:hidden block px-4 py-2 font-bold">Halo, dicoding 👋</li>
-                <li>
-                    <a href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profil
-                        saya</a>
-                </li>
-                <hr class="my-2">
-                <li>
-                    <a href="#"
-                        class="block px-4 py-2 text-red-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                        out</a>
-                </li>
+            <ul class="gap-5 items-center hidden md:flex">
+                <li><a href="javascript:void(0)" class="text-greenbase font-semibold">Home</a></li>
+                <li><a href="javascript:void(0)" class="text-gray-500 font-semibold">About us</a></li>
+                <li><a href="javascript:void(0)" class="text-gray-500 font-semibold">Our Team</a></li>
+                <li><a href="javascript:void(0)" class="text-gray-500 font-semibold">Mitra</a></li>
             </ul>
-        </div>
-    </nav>
-    <!-- nav end -->
+            <!-- <button class="px-10 py-3 font-semibold rounded-full text-greenbase shadow-lg border border-greenbase shadow-greenbgimage/20">
+                    login
+                </button> -->
+            <button class="flex items-center gap-3" id="dropdown-trigger" data-dropdown-toggle="dropdown-menu">
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="" class="w-8 aspect-square rounded-full" />
+                <div class="font-bold hidden md:block">Halo, dicoding !</div>
+            </button>
 
-    <!-- hero start -->
-    <div class="grid grid-cols-1 md:grid-cols-2 py-10 gap-10">
-        <div class="p-20 flex items-center">
-            <div class="grid grid-cols-1 gap-5">
+            <div id="dropdown-menu"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-trigger">
+                    <li class="md:hidden block px-4 py-2 font-bold">Halo, dicoding 👋</li>
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profil
+                            saya</a>
+                    </li>
+                    <hr class="my-2">
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 text-red-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                            out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- nav end -->
+
+        <!-- hero start -->
+        <div class="grid grid-cols-1 md:grid-cols-2 py-10 gap-10">
+            <div class="p-10 lg:p-20 flex items-center">
+                <div class="grid grid-cols-1 gap-5">
+                    <div class="">
+                        <h1 class="text-4xl text-gray-950 font-bold mb-2">Mengubah Limbah menjadi <span
+                                class="text-[#0FA958]"> Ladang Peluang</span></h1>
+                        <p class="text-gray-700">Bergabunglah dengan EcoNoBiz UMKM, Daur Ulang Kreativitas, dan Ciptakan
+                            Bisnis yang Berkelanjutan melalui Pengelolaan Limbah yang Bijak.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="">
+                            <div class="text-2xl font-semibold">89k +</div>
+                            <p class="text-gray-700">Limbah terjual</p>
+                        </div>
+                        <div class="">
+                            <div class="text-2xl font-semibold">100+</div>
+                            <p class="text-gray-700">UMKM Terdaftar</p>
+                        </div>
+                        <div class="">
+                            <div class="text-2xl font-semibold">50+</div>
+                            <p class="text-gray-700">Mitra Bisnis Terjalin</p>
+                        </div>
+                    </div>
+                    <button class="bg-greenbase w-fit px-8 py-3 rounded-full font-semibold text-gray-50">
+                        Get started &rarr;
+                    </button>
+                </div>
+            </div>
+            <div class="hidden md:flex relative p-10">
+                <div class="bg-[#EEF3E7] rounded-full w-16 absolute top-12 left-6 aspect-square animate-scale-up-down">
+                </div>
+                <div class="bg-[#EEF3E7] rounded-full w-7 absolute bottom-64 left-3 aspect-square"></div>
+                <img src="./image/hero.svg" alt="" class="my-auto">
+            </div>
+        </div>
+        <!-- hero end -->
+
+
+        <section class="grid grid-cols-1 md:grid-cols-2">
+            <div class="p-10 lg:p-20"></div>
+            <div class="p-10 lg:p-20">
+                <div class="flex justify-start gap-3 items-center">
+                    <hr class="h-1 w-20 bg-greenbgimage" />
+                    <h1 class="pr-4 font-extrabold text-2xl">About us</h1>
+                </div>
                 <div class="">
-                    <h1 class="text-4xl text-gray-950 font-bold mb-2">Mengubah Limbah menjadi <span
-                            class="text-[#0FA958]"> Ladang Peluang</span></h1>
-                    <p class="text-gray-700">Bergabunglah dengan EcoNoBiz UMKM, Daur Ulang Kreativitas, dan Ciptakan
-                        Bisnis yang Berkelanjutan melalui Pengelolaan Limbah yang Bijak.</p>
+                    <div class="text-3xl font-bold mb-5">
+                        <span class="text-greenbgimage">Unleash the Potential </span>of Your Waste with EcoNoBiz.
+                    </div>
+                    <p>
+                        EcoNoBiz UMKM" mencerminkan platform yang membantu UMKM dalam menciptakan peluang bisnis baru
+                        melalui pemanfaatan limbah, dengan tujuan akhir mendukung pertumbuhan ekonomi berkelanjutan
+                    </p>
                 </div>
-                <div class="flex gap-4">
-                    <div class="">
-                        <div class="text-2xl font-semibold">89k +</div>
-                        <p class="text-gray-700">Limbah terjual</p>
-                    </div>
-                    <div class="">
-                        <div class="text-2xl font-semibold">100+</div>
-                        <p class="text-gray-700">UMKM Terdaftar</p>
-                    </div>
-                    <div class="">
-                        <div class="text-2xl font-semibold">50+</div>
-                        <p class="text-gray-700">Mitra Bisnis Terjalin</p>
-                    </div>
+            </div>
+        </section>
+
+        <!-- search&filter section -->
+
+        <section class="p-10 lg:p-20">
+            <div class="pt-3 mb-[37px] flex items-center justify-between">
+                <div class="flex items-center">
+                    <h1 class="pr-4 font-extrabold text-2xl">Waste List</h1>
+                    <hr class="h-1 w-20 bg-greenbgimage" />
                 </div>
-                <button class="bg-greenbase w-fit px-8 py-3 rounded-full font-semibold text-gray-50">
-                    Get started &rarr;
-                </button>
-            </div>
-        </div>
-        <div class="hidden md:flex relative p-10">
-            <div class="bg-[#EEF3E7] rounded-full w-16 absolute top-12 left-6 aspect-square animate-scale-up-down">
-            </div>
-            <div class="bg-[#EEF3E7] rounded-full w-7 absolute bottom-64 left-3 aspect-square"></div>
-            <img src="./image/hero.svg" alt="" class="my-auto">
-        </div>
-    </div>
-    <!-- hero end -->
-
-    <!-- search&filter section -->
-
-    <section>
-        <div class="px-[35px] pt-3 mb-[37px] flex items-center justify-between">
-            <div class="flex items-center">
-                <h1 class="pr-4 font-extrabold text-2xl">Waste List</h1>
-                <hr class="h-1 w-20 bg-greenbgimage" />
-            </div>
-            <div id="add-modal">
-                <!-- Modal add toggle -->
-                <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                <button data-modal-target="add-product-modal" data-modal-toggle="add-product-modal"
                     class="block text-white bg-greenbase hover:bg-greenbgimage focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center"
                     type="button">
                     Add Product
                 </button>
+            </div>
+            <div
+                class="md:grid-cols-4 bg-white border grid grid-cols-1 gap-3 border-slate-200 rounded-xl shadow-md p-5">
+                <div>
+                    <h1 class="font-bold text-base">Search</h1>
+                    <label for="simple-search" class="sr-only">Search</label>
+                    <div class="relative w-full">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <input type="text" id="simple-search"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Cari Produk" required />
+                    </div>
+                </div>
 
-                <!-- Main add modal -->
-                <div id="authentication-modal" tabindex="-1" aria-hidden="true"
-                    class="fixed left-0 right-0 top-0 z-50 h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0 justify-center items-center backdrop-blur-sm hidden">
-                    <div class="relative max-h-full w-full max-w-md md:max-w-xl" tabindex="0">
-                        <!-- Modal content -->
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <!-- Modal header -->
-                            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                    Tambah Produk
-                                </h3>
-                                <button type="button"
-                                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                                    data-modal-hide="authentication-modal">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
+                <div>
+                    <h1 class="font-bold text-base">Category</h1>
+                    <div class="mb-2 bg-[#F1F1F1] divide-y divide-gray-100 rounded-lg shadow">
+                        <select name="category" id="category"
+                            class="text-[#6F6F6F] bg-white border border-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 flex items-center w-full">
+                            <option value="">Pilih Kategori</option>
+                            <option value="">Organik</option>
+                            <option value="">Non-Organik</option>
+                            <option value="">Kimia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 class="font-bold text-base">Location</h1>
+                    <div class="mb-2 bg-[#F1F1F1] divide-y divide-gray-100 rounded-lg shadow">
+                        <select id="dropdownLocation"
+                            class="text-[#6F6F6F] bg-white border border-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 flex items-center w-full">
+                            <option>Pilih Provinsi</option>
+                            <option>Nanggroe Aceh Darussalam</option>
+                            <option>Sumatera Utara</option>
+                            <option>Sumatera Selatan</option>
+                            <option>Sumatera Barat</option>
+                            <option>Bengkulu</option>
+                            <option>Kepulauan Riau</option>
+                            <option>Jambi</option>
+                            <option>Lampung</option>
+                            <option>Bangka Belitung</option>
+                            <option>Kalimantan Barat</option>
+                            <option>Kalimantan Timur</option>
+                            <option>Kalimantan Selatan</option>
+                            <option>Kalimantan Tengah</option>
+                            <option>Kalimantan Utara</option>
+                            <option>Banten</option>
+                            <option>DKI Jakarta</option>
+                            <option>Jawa Barat</option>
+                            <option>Jawa Tengah</option>
+                            <option>Daerah Istimewa Yogyakarta</option>
+                            <option>Jawa Timur</option>
+                            <option>Bali</option>
+                            <option>Nusa Tenggara Timur</option>
+                            <option>Nusa Tenggara Barat</option>
+                            <option>Gorontalo</option>
+                            <option>Sulawesi Barat</option>
+                            <option>Sulawesi Tengah</option>
+                            <option>Sulawesi Utara</option>
+                            <option>Sulawesi Tenggara</option>
+                            <option>Sulawesi Selatan</option>
+                            <option>Maluku Utara</option>
+                            <option>Maluku</option>
+                            <option>Papua Barat</option>
+                            <option>Papua</option>
+                            <option>Papua Tengah</option>
+                            <option>Papua Pegunungan</option>
+                            <option>Papua Selatan</option>
+                            <option>Papua Barat Daya</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 class="font-bold text-base">Price</h1>
+                    <div class="mb-2 bg-[#F1F1F1] divide-y divide-gray-100 rounded-lg shadow">
+                        <select name="" id=""
+                            class="text-[#6F6F6F] bg-white border border-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 flex items-center w-full">
+                            <option value="">Harga</option>
+                            <option value="">Harga : Rendah ke Tinggi</option>
+                            <option value="">Harga : Tinggi ke Rendah</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search&filter section -->
+
+        <!-- poduct list -->
+        <div id="container-list" class="m-4 p-10 lg:p-20 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        </div>
+
+        <div id="button-page" class="flex justify-end mr-6 mb-6 text-white">
+            <div id="prev" class="bg-greenbase rounded-full flex p-2 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                </svg>
+                <button>Previous</button>
+            </div>
+            <div id="page-number" class="flex text-black"></div>
+            <div id="next" class="bg-greenbase rounded-full flex p-2 mx-2">
+                <button>Next</button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>
+            </div>
+        </div>
+        <!-- poduct list -->
+
+        <!-- our team section -->
+        <section class="lg:p-20">
+            <div class="w-full bg-[#C5EDD0] rounded-xl p-10">
+                <div class="m-20">
+                    <h1 class="text-center font-extrabold text-2xl mb-1 text-[#18340E]">Our Team</h1>
+                    <hr class="mx-auto h-1 w-28 mb-[30px] bg-[#18340E]" />
+                </div>
+                <div class="w-max mx-auto grid grid-cols-1 md:grid-cols-2 mb-20 gap-10 px-10">
+                    <div class="flex gap-7">
+                        <div class="relative col-span-1">
+                            <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle fill="#FFA31A" cx="100" cy="100" r="100" />
+                            </svg>
+                            <img class="relative" src="./image/member/roji.png" />
+                        </div>
+                        <div class="flex items-center col-span-2">
+                            <div class="">
+                                <div class="font-bold text-base">Fahruraji</div>
+                                <div class="font-normal text-sm mb-2 max-w-[15rem]">"Hidup adalah undian"</div>
+                                <ul class="flex gap-4">
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/igdark.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/github.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/linkedin.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- Modal body -->
-                            <div class="px-6 py-6 lg:px-8">
-                                <form class="space-y-6" action="POST" enctype="multipart/form-data">
-                                    <div class="md:grid md:grid-cols-2 md:gap-4">
-                                        <div class="my-2">
-                                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                                for="photo">Foto Limbah</label>
-                                            <input
-                                                class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                                                aria-describedby="file_input_help" id="photo" name="photo" type="file"
-                                                required>
-                                            <small class="mt-1 text-gray-500 dark:text-gray-300"
-                                                id="file_input_help">JPG, JPEG or PNG(MAX. 2 Mb).</small>
-                                        </div>
-                                        <div class="my-2">
-                                            <label for="name"
-                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
-                                                Limbah</label>
-                                            <input type="text" id="name" name="name"
-                                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                                placeholder="Mis. Putih Telur" required>
-                                        </div>
-                                        <div class="my-2">
-                                            <label for="category"
-                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kategori</label>
-                                            <select id="category" name="category"
-                                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                                required>
-                                                <option value="">Pilih Kategori--</option>
-                                                <option value="Organik">Organik</option>
-                                                <option value="Non-Organik">Non-Organik</option>
-                                                <option value="Kimia">Kimia</option>
-                                            </select>
-                                        </div>
-                                        <div class="my-2">
-                                            <label for="price"
-                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Harga</label>
-                                            <div class="flex">
-                                                <input type="number" id="price" name="price" tabindex="0"
-                                                    class="rounded-none rounded-l-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  "
-                                                    placeholder="10000" required>
-                                                <span tabindex="0"
-                                                    class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-l-0 border-gray-300 rounded-r-md cursor-pointer">
-                                                    Kg
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="my-2">
-                                            <label for="description"
-                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi</label>
-                                            <textarea id="description" name="description" rows="4"
-                                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                                placeholder="Deskripsikan limbah..." required></textarea>
-                                        </div>
-                                        <div class="my-2">
-                                            <label for="potentials"
-                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Potensi
-                                                Limbah</label>
-                                            <textarea id="potentials" name="potentials" rows="4"
-                                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                                placeholder="Jelaskan Potensi Limbah" required></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="md:justify-end md:flex-row flex md:gap-2 flex-col-reverse">
-                                        <button type="button" data-modal-hide="authentication-modal"
-                                            class="md:w-28 text-white md:mx-2 w-full my-1 bg-slate-500 hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                                            Batal
-                                        </button>
-                                        <button type="submit"
-                                            class="md:w-28 w-full my-1 text-white bg-greenbase hover:bg-greenbgimage focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                                            Simpan
-                                        </button>
-                                    </div>
-                                </form>
+                        </div>
+                    </div>
+                    <div class="flex gap-7">
+                        <div class="relative col-span-1">
+                            <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle fill="#FFA31A" cx="100" cy="100" r="100" />
+                            </svg>
+                            <img class="relative" src="./image/member/aliya.png" />
+                        </div>
+                        <div class="flex items-center col-span-2">
+                            <div class="">
+                                <div class="font-bold text-base">Siti Aliya Ngakasah</div>
+                                <div class="font-normal text-sm mb-2 max-w-[15rem]">"Hidup itu pilihan"</div>
+                                <ul class="flex gap-4">
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/igdark.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/github.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/linkedin.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-7">
+                        <div class="relative col-span-1">
+                            <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle fill="#FFA31A" cx="100" cy="100" r="100" />
+                            </svg>
+                            <img class="relative" src="./image/member/dea.png" />
+                        </div>
+                        <div class="flex items-center col-span-2">
+                            <div class="">
+                                <div class="font-bold text-base">Deatrisya Mirela Harahap</div>
+                                <div class="font-normal text-sm mb-2 max-w-[15rem]">"Hidup adalah Kebahagiaan"</div>
+                                <ul class="flex gap-4">
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/igdark.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/github.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/linkedin.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-7">
+                        <div class="relative col-span-1">
+                            <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle fill="#FFA31A" cx="100" cy="100" r="100" />
+                            </svg>
+                            <img class="relative" src="./image/member/vrl.png" />
+                        </div>
+                        <div class="flex items-center col-span-2">
+                            <div class="">
+                                <div class="font-bold text-base">Shafwan Almer Varrel</div>
+                                <div class="font-normal text-sm mb-2 max-w-[15rem]">"Apapun yang terjadi, tetaplah bernafas"
+                                </div>
+                                <ul class="flex gap-4">
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/igdark.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/github.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./image/icon/linkedin.png" alt="instagram" />
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div
-            class="max-w-sm md:max-w-full md:grid-cols-4 md:m-6 bg-white border grid grid-cols-1 gap-3 border-slate-200 rounded-xl mx-auto shadow-md p-5">
-            <div>
-                <h1 class="font-bold text-base">Search</h1>
-                <label for="simple-search" class="sr-only">Search</label>
-                <div class="relative w-full">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
-                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <input type="text" id="simple-search"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Cari Produk" required />
-                </div>
-            </div>
+        </section>
+        <!-- our team section -->
 
-            <div>
-                <h1 class="font-bold text-base">Category</h1>
-                <div class="mb-2 bg-[#F1F1F1] divide-y divide-gray-100 rounded-lg shadow">
-                    <select name="category" id="category"
-                        class="text-[#6F6F6F] bg-white border border-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 flex items-center w-full">
-                        <option value="">Pilih Kategori</option>
-                        <option value="">Organik</option>
-                        <option value="">Non-Organik</option>
-                        <option value="">Kimia</option>
-                    </select>
-                </div>
+        <!-- feedback -->
+        <div class="relative h-[600px] w-full">
+            <h1 class="text-center text-2xl font-extrabold pt-7">
+                Recent Review
+            </h1>
+            <hr class="mx-auto mt-2 h-1 w-44 bg-greenbgimage" />
+            <div
+                class="absolute -left-40 right-auto top-1/2 h-80 w-80 -translate-y-1/2 transform rounded-full bg-[#0FA958]">
             </div>
-
-            <div>
-                <h1 class="font-bold text-base">Location</h1>
-                <div class="mb-2 bg-[#F1F1F1] divide-y divide-gray-100 rounded-lg shadow">
-                    <select id="dropdownLocation"
-                        class="text-[#6F6F6F] bg-white border border-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 flex items-center w-full">
-                        <option>Pilih Provinsi</option>
-                        <option>Nanggroe Aceh Darussalam</option>
-                        <option>Sumatera Utara</option>
-                        <option>Sumatera Selatan</option>
-                        <option>Sumatera Barat</option>
-                        <option>Bengkulu</option>
-                        <option>Kepulauan Riau</option>
-                        <option>Jambi</option>
-                        <option>Lampung</option>
-                        <option>Bangka Belitung</option>
-                        <option>Kalimantan Barat</option>
-                        <option>Kalimantan Timur</option>
-                        <option>Kalimantan Selatan</option>
-                        <option>Kalimantan Tengah</option>
-                        <option>Kalimantan Utara</option>
-                        <option>Banten</option>
-                        <option>DKI Jakarta</option>
-                        <option>Jawa Barat</option>
-                        <option>Jawa Tengah</option>
-                        <option>Daerah Istimewa Yogyakarta</option>
-                        <option>Jawa Timur</option>
-                        <option>Bali</option>
-                        <option>Nusa Tenggara Timur</option>
-                        <option>Nusa Tenggara Barat</option>
-                        <option>Gorontalo</option>
-                        <option>Sulawesi Barat</option>
-                        <option>Sulawesi Tengah</option>
-                        <option>Sulawesi Utara</option>
-                        <option>Sulawesi Tenggara</option>
-                        <option>Sulawesi Selatan</option>
-                        <option>Maluku Utara</option>
-                        <option>Maluku</option>
-                        <option>Papua Barat</option>
-                        <option>Papua</option>
-                        <option>Papua Tengah</option>
-                        <option>Papua Pegunungan</option>
-                        <option>Papua Selatan</option>
-                        <option>Papua Barat Daya</option>
-                    </select>
-                </div>
-            </div>
-
-            <div>
-                <h1 class="font-bold text-base">Price</h1>
-                <div class="mb-2 bg-[#F1F1F1] divide-y divide-gray-100 rounded-lg shadow">
-                    <select name="" id=""
-                        class="text-[#6F6F6F] bg-white border border-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 flex items-center w-full">
-                        <option value="">Harga</option>
-                        <option value="">Harga : Rendah ke Tinggi</option>
-                        <option value="">Harga : Tinggi ke Rendah</option>
-                    </select>
+            <div class="swiper-container hide-scrollbar overflow-x-hidden absolute  left-0 top-1/2 -translate-y-1/2">
+                <div id="review-card" class="swiper-wrapper p-12 md:p-52 flex w-min snap-x snap-mandatory gap-5">
                 </div>
             </div>
         </div>
-    </section>
-    <!-- search&filter section -->
-
-    <!-- poduct list -->
-    <div id="container-list" class="m-4 p-4 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"></div>
-
-    <div id="button-page" class="flex justify-end mr-6 mb-6 text-white">
-        <div id="prev" class="bg-greenbase rounded-full flex p-2 mx-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-            </svg>
-            <button>Previous</button>
-        </div>
-        <div id="page-number" class="flex text-black"></div>
-        <div id="next" class="bg-greenbase rounded-full flex p-2 mx-2">
-            <button>Next</button>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-            </svg>
-        </div>
+        <!-- feedback -->
     </div>
-    <!-- poduct list -->
-
-    <!-- our team section -->
-
-    <section class="w-full bg-[#C5EDD0] py-20">
-        <div class="mb-20">
-            <h1 class="text-center font-extrabold text-2xl mb-1 text-[#18340E]">Our Team</h1>
-            <hr class="mx-auto h-1 w-28 mb-[30px] bg-[#18340E]" />
-        </div>
-        <div class="w-max mx-auto grid grid-cols-1 md:grid-cols-2 mb-20 gap-10 px-10">
-            <div class="flex gap-7">
-                <div class="relative col-span-1">
-                    <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle fill="#FFA31A" cx="100" cy="100" r="100" />
-                    </svg>
-                    <img class="relative" src="./image/member/roji.png" />
-                </div>
-                <div class="flex items-center col-span-2">
-                    <div class="">
-                        <div class="font-bold text-base">Fahruraji</div>
-                        <div class="font-normal text-sm mb-2 max-w-[15rem]">"Hidup adalah undian"</div>
-                        <ul class="flex gap-4">
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/igdark.png" alt="instagram" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/github.png" alt="instagram" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/linkedin.png" alt="instagram" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="flex gap-7">
-                <div class="relative col-span-1">
-                    <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
-                        xmlns="http://www.w3.org/2000/svg">
-                          <circle fill="#FFA31A" cx="100" cy="100" r="100" />
-                    </svg>
-                    <img class="relative" src="./image/member/aliya.png" />
-                </div>
-                <div class="flex items-center col-span-2">
-                    <div class="">
-                        <div class="font-bold text-base">Siti Aliya Ngakasah</div>
-                        <div class="font-normal text-sm mb-2 max-w-[15rem]">"Hidup itu pilihan"</div>
-                        <ul class="flex gap-4">
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/igdark.png" alt="instagram" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/github.png" alt="instagram" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/linkedin.png" alt="instagram" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="flex gap-7">
-                <div class="relative col-span-1">
-                    <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle fill="#FFA31A" cx="100" cy="100" r="100" />
-                    </svg>
-                    <img class="relative" src="./image/member/dea.png" />
-                </div>
-                <div class="flex items-center col-span-2">
-                    <div class="">
-                        <div class="font-bold text-base">Deatrisya Mirela Harahap</div>
-                        <div class="font-normal text-sm mb-2 max-w-[15rem]">"Hidup adalah Kebahagiaan"</div>
-                        <ul class="flex gap-4">
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/igdark.png" alt="instagram" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/github.png" alt="instagram" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/linkedin.png" alt="instagram" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="flex gap-7">
-                <div class="relative col-span-1">
-                    <svg class="absolute bottom-[3.75rem] left-[3.75rem] w-[70px] h-[70px]" viewBox="0 0 200 200"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle fill="#FFA31A" cx="100" cy="100" r="100" />
-                    </svg>
-                    <img class="relative" src="./image/member/vrl.png" />
-                </div>
-                <div class="flex items-center col-span-2">
-                    <div class="">
-                        <div class="font-bold text-base">Shafwan Almer Varrel</div>
-                        <div class="font-normal text-sm mb-2 max-w-[15rem]">"Apapun yang terjadi, tetaplah bernafas"
-                        </div>
-                        <ul class="flex gap-4">
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/igdark.png" alt="instagram" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/github.png" alt="instagram" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./image/icon/linkedin.png" alt="instagram" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- our team section -->
-
-    <!-- feedback -->
-    <div class="relative h-[600px] w-full">
-        <h1 class="text-center text-2xl font-extrabold pt-7">
-            Recent Review
-        </h1>
-        <hr class="mx-auto mt-2 h-1 w-44 bg-greenbgimage" />
-        <div
-            class="absolute -left-40 right-auto top-1/2 h-80 w-80 -translate-y-1/2 transform rounded-full bg-[#0FA958]">
-        </div>
-        <div class="swiper-container hide-scrollbar overflow-x-hidden absolute  left-0 top-1/2 -translate-y-1/2">
-            <div id="review-card" class="swiper-wrapper p-12 md:p-52 flex w-min snap-x snap-mandatory gap-5">
-            </div>
-        </div>
-    </div>
-    <!-- feedback -->
 
     <!-- footer -->
     <footer class="bg-black font-nunito">
@@ -556,17 +476,120 @@
         </button>
         <div class="w-full h-full flex items-start py-20">
             <ul class="flex flex-wrap gap-10 px-4">
-                <li class="w-full group duration-150 hover:translate-x-2 font-bold hover:text-greenbgimage text-3xl"><a href="">Home</a></li>
-                <li class="w-full group duration-150 hover:translate-x-2 font-bold hover:text-greenbgimage text-3xl"><a href="">About Us</a></li>
-                <li class="w-full group duration-150 hover:translate-x-2 font-bold hover:text-greenbgimage text-3xl"><a href="">Our Team</a></li>
-                <li class="w-full group duration-150 hover:translate-x-2 font-bold hover:text-greenbgimage text-3xl"><a href="">Mitra</a></li>
+                <li class="w-full group duration-150 hover:translate-x-2 font-bold hover:text-greenbgimage text-3xl"><a
+                        href="">Home</a></li>
+                <li class="w-full group duration-150 hover:translate-x-2 font-bold hover:text-greenbgimage text-3xl"><a
+                        href="">About Us</a></li>
+                <li class="w-full group duration-150 hover:translate-x-2 font-bold hover:text-greenbgimage text-3xl"><a
+                        href="">Our Team</a></li>
+                <li class="w-full group duration-150 hover:translate-x-2 font-bold hover:text-greenbgimage text-3xl"><a
+                        href="">Mitra</a></li>
             </ul>
         </div>
         <div class="w-full absolute bottom-0 left-0 px-5 text-sm">
-            <div class="border-t-2 py-5">Copyright 2023 All right reserved | This web is made by <a href="#" class="text-greenbgimage">econobiz</a></div>
+            <div class="border-t-2 py-5">Copyright 2023 All right reserved | This web is made by <a href="#"
+                    class="text-greenbgimage">econobiz</a></div>
         </div>
     </div>
     <!-- drawer -->
+
+    <div id="add-product-modal" tabindex="-1" aria-hidden="true"
+        class="fixed left-0 right-0 top-0 z-50 h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0 justify-center items-center backdrop-blur-sm hidden">
+        <div class="relative max-h-full w-full max-w-md md:max-w-xl" tabindex="0">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Tambah Produk
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="add-product-modal">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="px-6 py-6 lg:px-8">
+                    <form class="space-y-6" action="POST" enctype="multipart/form-data">
+                        <div class="md:grid md:grid-cols-2 md:gap-4">
+                            <div class="my-2">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                                    for="photo">Foto Limbah</label>
+                                <input
+                                    class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                                    aria-describedby="file_input_help" id="photo" name="photo" type="file" required>
+                                <small class="mt-1 text-gray-500 dark:text-gray-300" id="file_input_help">JPG, JPEG or
+                                    PNG(MAX. 2 Mb).</small>
+                            </div>
+                            <div class="my-2">
+                                <label for="name"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
+                                    Limbah</label>
+                                <input type="text" id="name" name="name"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Mis. Putih Telur" required>
+                            </div>
+                            <div class="my-2">
+                                <label for="category"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kategori</label>
+                                <select id="category" name="category"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    required>
+                                    <option value="">Pilih Kategori--</option>
+                                    <option value="Organik">Organik</option>
+                                    <option value="Non-Organik">Non-Organik</option>
+                                    <option value="Kimia">Kimia</option>
+                                </select>
+                            </div>
+                            <div class="my-2">
+                                <label for="price"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Harga</label>
+                                <div class="flex">
+                                    <input type="number" id="price" name="price" tabindex="0"
+                                        class="rounded-none rounded-l-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  "
+                                        placeholder="10000" required>
+                                    <span tabindex="0"
+                                        class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-l-0 border-gray-300 rounded-r-md cursor-pointer">
+                                        Kg
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="my-2">
+                                <label for="description"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi</label>
+                                <textarea id="description" name="description" rows="4"
+                                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Deskripsikan limbah..." required></textarea>
+                            </div>
+                            <div class="my-2">
+                                <label for="potentials"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Potensi
+                                    Limbah</label>
+                                <textarea id="potentials" name="potentials" rows="4"
+                                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Jelaskan Potensi Limbah" required></textarea>
+                            </div>
+                        </div>
+                        <div class="md:justify-end md:flex-row flex md:gap-2 flex-col-reverse">
+                            <button type="button" data-modal-hide="add-product-modal"
+                                class="md:w-28 text-white md:mx-2 w-full my-1 bg-slate-500 hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                Batal
+                            </button>
+                            <button type="submit"
+                                class="md:w-28 w-full my-1 text-white bg-greenbase hover:bg-greenbgimage focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                Simpan
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
