@@ -1,34 +1,29 @@
 import { initFlowbite } from 'flowbite';
 import Swiper from 'swiper';
 import EconobizAPI from './data/econobizAPI';
-import { productCardTemplate } from './templates/card';
+import { productCardTemplate, feedbackCardTemplate } from './templates/card';
 
 const main = async () => {
   initFlowbite();
-  // eslint-disable-next-line no-unused-vars
-  const swiper = new Swiper('.swiper-container', {
-    direction: 'horizontal',
-    slidesPerView: 'auto',
-    // centeredSlides: true,
-    freeMode: true,
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: true,
-    },
-    mousewheel: true,
-    mousewheelControl: true,
-    mousewheelReleaseOnEdges: true,
+
+  window.addEventListener('click', () => {
+    const backdropElements = document.querySelectorAll('[drawer-backdrop=""]');
+
+    backdropElements.forEach((backdropElement) => {
+      const clonedElement = backdropElement.cloneNode(true);
+      backdropElement.parentNode.replaceChild(clonedElement, backdropElement);
+    });
   });
 
   const productList = document.querySelector('#container-list');
   const dataProducts = await EconobizAPI.listProduct();
-  const arrayDataProducts = dataProducts.data.products;
+  const arrayDataProducts = dataProducts.products;
   const itemsPerPage = 12;
   let currentPage = 1;
 
-  const displayProduct = (products) => {
+  const displayProduct = (arrayDataProducts) => {
     productList.innerHTML = '';
-    products.forEach((product) => {
+    arrayDataProducts.forEach((product) => {
       productList.innerHTML += productCardTemplate(product);
     });
   };
@@ -42,7 +37,19 @@ const main = async () => {
 
     for (let i = 1; i <= totalPages; i++) {
       const pageNumber = document.createElement('div');
-      pageNumber.classList.add('page-number-item', 'rounded-full', 'flex', 'p-2', 'mx-1', 'w-10', 'h-10', 'justify-center', 'items-center', 'md:p-3', 'lg:p-4');
+      pageNumber.classList.add(
+        'page-number-item',
+        'rounded-full',
+        'flex',
+        'p-2',
+        'mx-1',
+        'w-10',
+        'h-10',
+        'justify-center',
+        'items-center',
+        'md:p-3',
+        'lg:p-4',
+      );
       pageNumber.textContent = i;
 
       if (i === currentPage) {
@@ -104,7 +111,54 @@ const main = async () => {
     }
   });
 
+  const reviewList = document.querySelector('#review-card');
+  const review = await EconobizAPI.getAllFeedback();
+  const reviewData = review.feedbacks;
+
+  const displayFeedback = (feedbacks) => {
+    reviewList.innerHTML = '';
+
+    feedbacks.forEach((feedback) => {
+      const reviewItem = document.createElement('div');
+      reviewItem.classList.add(
+        'swiper-slide',
+        'relative',
+        'max-w-sm',
+        'p-6',
+        'bg-white',
+        'border',
+        'border-gray-200',
+        'rounded-lg',
+        'shadow-lg',
+        'w-72',
+      );
+      reviewItem.innerHTML = feedbackCardTemplate(feedback);
+
+      reviewList.appendChild(reviewItem);
+    });
+  };
+
+  const renderFeedback = () => {
+    displayFeedback(reviewData);
+  };
+
   renderProductList();
+  renderFeedback();
+
+  // eslint-disable-next-line no-unused-vars
+  const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    // centeredSlides: true,
+    freeMode: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      hide: true,
+    },
+    mousewheel: true,
+    mousewheelControl: true,
+    mousewheelReleaseOnEdges: true,
+  });
 };
 
 export default main;
