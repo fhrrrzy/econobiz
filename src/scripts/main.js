@@ -31,8 +31,7 @@ const main = async () => {
     productList.innerHTML = '';
 
     if (products.length === 0) {
-      productList.innerHTML =
-        '<h2 class="text-center sm:col-span-2 md:col-span-3 xl:col-span-4">Opps! Produk yang Anda cari tidak ditemukan</h2>';
+      productList.innerHTML = '<h2 class="text-center sm:col-span-2 md:col-span-3 xl:col-span-4">Opps! Produk yang Anda cari tidak ditemukan</h2>';
       return;
     }
 
