@@ -19,7 +19,7 @@ export const ourTeamElement = () => `<section class="lg:p-20">
                     <div class="font-normal text-sm mb-2 max-w-[15rem]">"Hidup adalah undian"</div>
                     <ul class="flex gap-4">
                         <li>
-                            <a href="">
+                            <a href="https://www.instagram.com/fhrrrzy___/">
                                 <img src="./image/icon/igdark.png" alt="instagram" />
                             </a>
                         </li>
@@ -51,7 +51,7 @@ export const ourTeamElement = () => `<section class="lg:p-20">
                     <div class="font-normal text-sm mb-2 max-w-[15rem]">"Hidup itu pilihan"</div>
                     <ul class="flex gap-4">
                         <li>
-                            <a href="">
+                            <a href="https://www.instagram.com/aliyaaa.sn/">
                                 <img src="./image/icon/igdark.png" alt="instagram" />
                             </a>
                         </li>
@@ -83,7 +83,7 @@ export const ourTeamElement = () => `<section class="lg:p-20">
                     <div class="font-normal text-sm mb-2 max-w-[15rem]">"Hidup adalah Kebahagiaan"</div>
                     <ul class="flex gap-4">
                         <li>
-                            <a href="">
+                            <a href="https://www.instagram.com/__deaavalinea/">
                                 <img src="./image/icon/igdark.png" alt="instagram" />
                             </a>
                         </li>
@@ -116,7 +116,7 @@ export const ourTeamElement = () => `<section class="lg:p-20">
                     </div>
                     <ul class="flex gap-4">
                         <li>
-                            <a href="">
+                            <a href="https://www.instagram.com/shfwnalmer_vrl/">
                                 <img src="./image/icon/igdark.png" alt="instagram" />
                             </a>
                         </li>
