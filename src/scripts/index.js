@@ -12,6 +12,7 @@ const app = new App({
 
 window.addEventListener('hashchange', () => {
   app.renderPage();
+  initFlowbite();
   main();
 });
 

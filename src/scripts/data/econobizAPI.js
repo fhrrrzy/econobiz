@@ -1,9 +1,20 @@
-import CONFIG from '../globals/config';
+import API_ENDPOINT from '../globals/api-endpoint';
 
 class EconobizAPI {
-  static async listProduct() {
+  static async getAllProduct() {
     try {
-      const response = await fetch(`${CONFIG.BASE_URL}/product`);
+      const response = await fetch(API_ENDPOINT.LIST);
+      const responseJson = await response.json();
+      return responseJson;
+    } catch (error) {
+      console.log(error);
+      return [];
+    }
+  }
+
+  static async getDetailProduct(id) {
+    try {
+      const response = await fetch(API_ENDPOINT.DETAIL(id));
       const responseJson = await response.json();
       return responseJson;
     } catch (error) {
@@ -14,7 +25,7 @@ class EconobizAPI {
 
   static async getAllFeedback() {
     try {
-      const response = await fetch(`${CONFIG.BASE_URL}/feedback`);
+      const response = await fetch(API_ENDPOINT.REVIEW);
       const responseJson = await response.json();
       return responseJson;
     } catch (error) {
@@ -23,9 +34,9 @@ class EconobizAPI {
     }
   }
 
-  static async feedback() {
+  static async filterProduct(searchname, category, location, pricesort) {
     try {
-      const response = await fetch('https://mocki.io/v1/64672391-2b6b-462c-8bde-df448ee9d8b8');
+      const response = await fetch(`${API_ENDPOINT.LIST}?searchname=${encodeURIComponent(searchname)}&category=${encodeURIComponent(category)}&location=${encodeURIComponent(location)}&pricesort=${encodeURIComponent(pricesort)}`);
       const responseJson = await response.json();
       return responseJson;
     } catch (error) {
