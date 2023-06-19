@@ -16,7 +16,7 @@ const main = async () => {
   });
 
   const productList = document.querySelector('#container-list');
-  const dataProducts = await EconobizAPI.listProduct();
+  const dataProducts = await EconobizAPI.getAllProduct();
   const arrayDataProducts = dataProducts.products;
   const itemsPerPage = 12;
   let currentPage = 1;
@@ -158,6 +158,14 @@ const main = async () => {
     mousewheel: true,
     mousewheelControl: true,
     mousewheelReleaseOnEdges: true,
+  });
+
+  const selectElement = document.querySelector('#category');
+  selectElement.addEventListener('change', (event) => {
+    const selectedCategory = event.target.value;
+    console.log(selectedCategory);
+    filterProduct(selectedCategory);
+    console.log(filterProduct(selectedCategory));
   });
 };
 
